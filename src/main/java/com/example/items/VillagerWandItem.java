@@ -1,4 +1,4 @@
-package com.villager_wand_mod.items;
+package com.example.items;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.TntEntity;
