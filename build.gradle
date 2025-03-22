@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.9'
+    id 'fabric-loom' version '1.3.10'
     id 'maven-publish'
 }
 
@@ -13,7 +13,6 @@ base {
 repositories {
     // Fabric Maven repository
     maven { url "https://maven.fabricmc.net/" }
-
     // Standard Maven Central repository
     mavenCentral()
 }
@@ -39,8 +38,8 @@ dependencies {
     // Fabric Loader
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-    // Correct Fabric API for Minecraft 1.21.1
-    modImplementation "net.fabricmc.fabric-api:fabric-api:0.102.1+1.21.1"
+    // Fabric API for Minecraft 1.21.1 (update your fabric_version in gradle.properties accordingly)
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 }
 
 processResources {
